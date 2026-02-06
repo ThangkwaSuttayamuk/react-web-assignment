@@ -135,7 +135,6 @@ export const CitizenIdInput: React.FC<Props> = ({ value = "", onChange }) => {
           .join("")
           .replace(/_/g, "");
 
-        const start = cursor;
         cursor += len;
 
         return (
