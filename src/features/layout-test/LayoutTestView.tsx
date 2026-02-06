@@ -5,9 +5,9 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./LayoutTestView.module.scss";
 import { ControlCard } from "./components/control-card/ControlCard";
+import controlStyles from "./components/control-card/ControlCard.module.scss";
 import { ShapeCard } from "./components/shape-card/ShapeCard";
 import { ShapeCol } from "./components/shape-col/ShapeCol";
-import controlStyles from "./components/control-card/ControlCard.module.scss";
 
 type AlignType = "left" | "right";
 

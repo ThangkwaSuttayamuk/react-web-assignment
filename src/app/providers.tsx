@@ -1,11 +1,11 @@
 "use client";
 
-import { Provider } from "react-redux";
-import { useEffect } from "react";
-import { store } from "@/store";
 import { setLanguage } from "@/features/home/home.slice";
-import i18n from "i18next";
 import "@/i18n/config";
+import { store } from "@/store";
+import i18n from "i18next";
+import { useEffect } from "react";
+import { Provider } from "react-redux";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   useEffect(() => {
