@@ -1,0 +1,53 @@
+.container {
+  min-height: 100vh;
+  padding: 16px 24px 24px;
+}
+
+.control-panel {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.groupPadding {
+  padding: 0 32px 16px;
+}
+
+.controlRow {
+  margin-bottom: 20px;
+  padding: 0 24px;
+}
+
+.headerRow {
+  margin-bottom: 12px;
+}
+
+.shapeRow {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 16px;
+  }
+
+  .groupPadding {
+    padding: 0 16px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 12px;
+  }
+
+  .groupPadding {
+    padding: 0 8px 8px;
+  }
+
+  .controlRow {
+    padding: 0 8px;
+  }
+}
+

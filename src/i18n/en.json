@@ -1,0 +1,85 @@
+{
+  "test1": "Test 1",
+  "test2": "Test 2",
+  "layout": "Layout & Style",
+  "layoutTest": {
+    "title": "Layout & Style",
+    "controls": {
+      "moveShape": "Move Shape",
+      "align": "Move position",
+      "moveLeft": "Move shape",
+      "moveRight": "Move shape"
+    }
+  },
+  "form": "Form & Table",
+  "formTable": {
+    "title": "Form & Table",
+    "actions": {
+      "selectAll": "Select All",
+      "delete": "DELETE",
+      "home": "Home"
+    },
+    "form": {
+      "title": "Title",
+      "selectTitle": "Title",
+      "birthdayPlaceholder": "mm/dd/yy",
+      "selectPlaceholder": "- - Please Select - -",
+      "firstname": "Firstname",
+      "lastname": "Lastname",
+      "birthday": "Birthday",
+      "nationality": "Nationality",
+      "citizenId": "Citizen ID",
+      "gender": "Gender",
+      "mobilePhone": "Mobile Phone",
+      "phone": "Phone",
+      "passportNo": "Passport No",
+      "expectedSalary": "Expected Salary",
+      "reset": "RESET",
+      "submit": "Submit",
+      "update": "Update"
+    },
+    "options": {
+      "title": {
+        "mr": "Mr.",
+        "mrs": "Mrs.",
+        "ms": "Ms."
+      },
+      "nationality": {
+        "thai": "Thai",
+        "american": "American",
+        "british": "British",
+        "japanese": "Japanese",
+        "australian": "Australian"
+      },
+      "gender": {
+        "male": "Male",
+        "female": "Female",
+        "unsex": "Unsex"
+      },
+      "countryCode": {
+        "us": "🇺🇸 +1",
+        "gb": "🇬🇧 +44",
+        "th": "🇹🇭 +66",
+        "jp": "🇯🇵 +81",
+        "au": "🇦🇺 +61"
+      }
+    },
+    "table": {
+      "name": "Name",
+      "gender": "Gender",
+      "mobilePhone": "Mobile Phone",
+      "nationality": "Nationality",
+      "manage": "MANAGE",
+      "edit": "EDIT",
+      "delete": "DELETE",
+      "prev": "PREV",
+      "next": "NEXT"
+    },
+    "validation": {
+      "required": "{{field}} is required",
+      "citizenIdLength": "Citizen ID must be 13 digits",
+      "phoneLength": "Phone must be 10 digits",
+      "passportFormat": "Passport No must be 9 characters (A-Z or 0-9)"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@use "./variables" as *;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.gradient-container {
+  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    $primary-gradient-start,
+    $primary-gradient-end
+  );
+  position: relative;
+  padding: 24px;
+}

@@ -1,0 +1,152 @@
+.control-card {
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+
+  &:hover {
+    background: #ffa500;
+    border-color: #d9d9d9;
+  }
+
+  &:hover :global(.ant-card-body) {
+    background: #ffa500;
+  }
+
+  :global(.ant-card-body) {
+    padding: 16px;
+    border-radius: 12px;
+  }
+}
+
+.control-card-content {
+  position: relative;
+  width: 160px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  min-width: 110px;
+  text-align: center;
+  justify-content: center;
+}
+
+.control-card-content-wide {
+  width: 400px;
+}
+
+.control-label {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7bc96f;
+  color: #ffffff;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.triangle-control {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.triangle-stack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.triangle-left {
+  border-width: 60px 90px 60px 0;
+  border-color: transparent #7b7b7b transparent transparent;
+}
+
+.triangle-right {
+  border-width: 60px 0 60px 90px;
+  border-color: transparent transparent transparent #7b7b7b;
+}
+
+.triangle-up {
+  border-width: 0 60px 90px 60px;
+  border-color: transparent transparent #7b7b7b transparent;
+}
+
+.triangle-down {
+  border-width: 90px 60px 0 60px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+
+@media (max-width: 1024px) {
+  .control-card-content {
+    width: 140px;
+    height: 110px;
+  }
+
+  .control-card-content-wide {
+    width: 320px;
+  }
+
+  .triangle-stack {
+    gap: 18px;
+  }
+
+  .triangle-left {
+    border-width: 48px 72px 48px 0;
+  }
+
+  .triangle-right {
+    border-width: 48px 0 48px 72px;
+  }
+
+  .triangle-up {
+    border-width: 0 48px 72px 48px;
+  }
+
+  .triangle-down {
+    border-width: 72px 48px 0 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .control-card-content {
+    width: 120px;
+    height: 96px;
+  }
+
+  .control-card-content-wide {
+    width: 260px;
+  }
+
+  .triangle-stack {
+    gap: 12px;
+  }
+
+  .triangle-left {
+    border-width: 38px 58px 38px 0;
+  }
+
+  .triangle-right {
+    border-width: 38px 0 38px 58px;
+  }
+
+  .triangle-up {
+    border-width: 0 38px 58px 38px;
+  }
+
+  .triangle-down {
+    border-width: 58px 38px 0 38px;
+  }
+}

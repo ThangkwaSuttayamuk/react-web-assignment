@@ -1,0 +1,15 @@
+.fullWidth {
+  width: 100%;
+}
+
+.phoneSeparator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 3px;
+}
+
+.rowSpaceBetween {
+  justify-content: space-between;
+}

@@ -1,0 +1,117 @@
+.container {
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.topRightActions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.formWrapper {
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 24px;
+}
+
+
+.tableActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0 16px;
+}
+
+.tableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formTable :global(.ant-table) {
+  overflow-x: auto;
+}
+
+.manageActionButton {
+  color: #000 !important;
+}
+
+.manageActionButton:hover {
+  color: #1890ff !important;
+  background: transparent !important;
+}
+
+.pagination :global(.ant-pagination-item) {
+  border: none;
+  background: transparent;
+}
+
+.pagination :global(.ant-pagination-item a) {
+  color: #000;
+}
+
+.pagination :global(.ant-pagination-item-active) {
+  border: 1px solid #1890ff;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.pagination :global(.ant-pagination-item-active a) {
+  color: #1890ff;
+}
+
+.pagination :global(.ant-pagination-prev),
+.pagination :global(.ant-pagination-next) {
+  border: none;
+  background: transparent;
+}
+
+.pagination :global(.ant-pagination-disabled) {
+  color: #999 !important;
+}
+
+.pagination :global(.ant-pagination-disabled span) {
+  color: #999 !important;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .topRightActions {
+    position: static;
+    align-items: flex-end;
+    margin-bottom: 16px;
+  }
+
+  .formWrapper {
+    padding: 12px;
+  }
+
+  .tableHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .tableActions {
+    flex-wrap: wrap;
+  }
+
+  .pagination {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

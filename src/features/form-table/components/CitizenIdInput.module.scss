@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.groupInput {
+  text-align: center;
+  width: var(--group-width);
+}
+
+.separator {
+  font-weight: 500;
+}

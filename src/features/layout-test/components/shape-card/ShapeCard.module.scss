@@ -1,0 +1,144 @@
+.shape-card {
+  border-radius: 12px;
+  width: 220px;
+  height: 160px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: #ffa500;
+    border-color: #d9d9d9;
+  }
+
+  &:hover :global(.ant-card-body) {
+    background: #ffa500;
+  }
+
+  :global(.ant-card-body) {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+  }
+}
+
+.shape {
+  width: 120px;
+  height: 120px;
+  background: #8c8c8c;
+}
+
+.square {
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.ovalHorizontal {
+  width: 180px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.trapezoid {
+  background: none;
+  border-bottom: 120px solid #8c8c8c;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  width: 200px;
+  height: 0;
+}
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+}
+
+.parallelogram {
+  width: 160px;
+  height: 100px;
+  transform: skew(20deg);
+}
+
+@media (max-width: 1024px) {
+  .shape-card {
+    width: 200px;
+    height: 150px;
+  }
+
+  .shape {
+    width: 110px;
+    height: 110px;
+  }
+
+  .ovalHorizontal {
+    width: 160px;
+    height: 90px;
+  }
+
+  .trapezoid {
+    border-bottom-width: 110px;
+    border-left-width: 36px;
+    border-right-width: 36px;
+    width: 180px;
+  }
+
+  .rectangle {
+    width: 180px;
+    height: 90px;
+  }
+
+  .parallelogram {
+    width: 150px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shape-card {
+    width: 180px;
+    height: 140px;
+  }
+
+  .shape {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ovalHorizontal {
+    width: 140px;
+    height: 80px;
+  }
+
+  .trapezoid {
+    border-bottom-width: 100px;
+    border-left-width: 32px;
+    border-right-width: 32px;
+    width: 160px;
+  }
+
+  .rectangle {
+    width: 160px;
+    height: 80px;
+  }
+
+  .parallelogram {
+    width: 130px;
+    height: 80px;
+  }
+}
+
+.invertedTrapezoid {
+  background: none;
+  border-top: 120px solid #8c8c8c;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  width: 120px;
+  height: 0;
+}
